@@ -130,8 +130,3 @@ class BlockTransactions:
             values_ind += 1
 
         return top_ancestry_count_transactions
-
-
-
-block = BlockTransactions(block_height="680001")
-print(block.get_top_ancestry_count_transactions(19))
