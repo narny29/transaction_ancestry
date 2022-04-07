@@ -6,7 +6,7 @@ The transactions are queried once and then stored in locale so that subsequent r
 There can be more than one transaction with the same ancestor count. So the number of transactions shown can be more than the given count. <br>
 
 
-Steps to run:
+Steps to run: <br>
 Edit the file transactions_ancestry.py. You can refer to the given example in the repository or can add a block <br>
     `block = BlockTransactions(block_height="680005")` <br>
     `print(block.get_top_ancestry_count_transactions(15))` <br>
