@@ -1,15 +1,15 @@
 This repository gets N transactions with the maximum ancestory count in a given block.
 
-Few points to note:
-Only those ancestors are counted which are present in the given block.
-The transactions are queried once and then stored in locale so that subsequent requests dont take too much time.
-There can be more than one transaction with the same ancestor count. So the number of transactions shown can be more than the given count.
+Few points to note: <br>
+Only those ancestors are counted which are present in the given block. <br>
+The transactions are queried once and then stored in locale so that subsequent requests dont take too much time. <br>
+There can be more than one transaction with the same ancestor count. So the number of transactions shown can be more than the given count. <br>
 
 
 Steps to run:
 Edit the file transactions_ancestry.py. You can refer to the given example in the repository or can add a block <br>
     `block = BlockTransactions(block_height="680005")` <br>
-    `print(block.get_top_ancestry_count_transactions(15))`
+    `print(block.get_top_ancestry_count_transactions(15))` <br>
     
     or
     
